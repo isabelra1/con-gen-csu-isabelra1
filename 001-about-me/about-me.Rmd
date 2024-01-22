@@ -1,0 +1,130 @@
+---
+title: "About Me"
+author: "Isabel A. Rodriguez Acosta"
+output:
+  html_document:
+    toc: yes
+  word_document:
+    toc: yes
+  pdf_document:
+    toc: yes
+bibliography: references.bib
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+# Who I am and where I came from
+
+My family and I are from Puerto Rico, but we moved to Chesapeake,
+Virginia when I was just 4 years old since my dad was stationed at the
+naval base near by. From a young age I had a love for animals and my
+family always encouraged me to become a veterinarian. Chesapeake is a
+very southern town in Virginia and I never liked it much so I had my
+heart set on leaving the state for college. That is how I ended up at
+[Colorado State University](https://www.colostate.edu/). I moved to
+Colorado in 2020 and still don't feel like I know the state very well,
+but I have really enjoyed my time here.
+
+My major is in Zoology and out of all the classes I have taken, genetics
+was my favorite. The concepts really clicked in my head and I left every
+lecture wanting to know more about what we were discussing. Although my
+primary goal is to become a veterinarian I also love learning and want
+to pursue subjects that I enjoy. And so, out of all the genetics related
+courses being offered this semester I found myself drawn to this class.
+
+I am so fortunate to say that I work at [CSU's Veterinary Teaching
+Hospital](https://vetmedbiosci.colostate.edu/vth/) in Internal Medicine
+and Community Practice as an assistant. I have learned so much at work
+from the faculty doctors, residents, interns, technicians, and vet
+students. Internal Medicine introduced me to the research side of
+veterinary medicine and that is something I hope to do as a veterinarian
+one day.
+
+I have a busy schedule with school and work, but I always make sure I
+have at least some free time to prevent burnout. When I have free time
+my top four things to do are:
+
+1.  Watching movies (either by myself or with my friends),
+2.  Listening to music (I like basically any genre, except country...)
+3.  Listening to true crime podcasts,
+4.  Expressing my creativity through journaling and drawing.
+
+I want to mention that all of my favorite leisure activities can be done
+with my cats, Thunder and Dawson, present. They are 14 year old liter
+brothers and I have had them since I was 7, so I love them very much.
+
+This is a photo of me in Denver at an interactive art exhibit.
+
+```{r me_pic, echo=FALSE, out.width="500px"}
+knitr::include_graphics("about-me-photo.jpg", auto_pdf = TRUE)
+```
+
+# Research Interests
+
+I don't have specialized research interests at this point in my career,
+but I think that by learning more about bioinformatics I will find
+something that I can be interested in pursuing.
+
+## Influential papers
+
+Since I have not performed any research, yet, I have chosen two papers
+that I have enjoyed reading in my studies. One aspect of genetics that I
+have been able to watch grow since I was first introduced to is
+CRISPR-Cas9. I learned about CRISPR in highschool and remember how
+excited my biology teachers were about the potential of CRISPR-Cas9
+related to genetic engineering.
+
+When I initially learned about the CRISPR-Cas9 system, the paper by
+@doudna2014new was very influential. Now in college I have been able to
+keep up with the new developments in research using CRISPR-Cas9
+[@sharma2021crispr].
+
+## The mathematics behind my research
+
+I haven't had the chance to dive into super complex mathematics yet, but I do still have my notes from my ecology course so I found some equations to use from there. 
+
+We worked with the logistic growth equation when modeling population dynamics of two competing species. First we just looked at the logistic growth equation as it is:
+$$\frac{dN}{dt}=rN(1-\frac{N}{K})$$
+Then we altered the equation to account for two species and their competition coefficients:
+$$\frac{dN_1}{dt}=r_1N_1(1-\frac{N_1+\alpha N_2}{K_1})\\\frac{dN_2}{dt}=r_2N_2(1-\frac{N_2+\beta N_1}{K_2})$$
+
+I also worked with the species-area curve:
+$$S=cA^z$$
+And the more graph friendly form of the equation:
+$$log (S)=log(c) +z (log(A))$$
+
+## My computing experience
+
+I have no experience with with any programming languages, so I went ahead and looked up some examples!
+
+I found JavaScript is one and got this example:
+```JavaScript
+  function myFunc(a, b) {
+      return a * b;
+  }
+  document.getElementById('demo').innerHTML = myFunc(4, 3);
+```
+And then I found an example of Python:
+```Python
+  words = ['cat', 'window', 'defenestrate']
+  for w in words:
+      print w, len(w)
+```
+## What I hope to get out of this class
+
+I hope that I can:
+
+-   Learn more about bioinformatics and different tools used in this field.
+-   Get an idea of the different types of research that involve analyzing high-throughput sequencing.
+-  Create a baseline understanding in these concepts to be able to potentially incorporate them in my future career. 
+
+# Evaluating some R code
+
+```{r}
+x <- 1:10
+y <- x^2
+plot(x,y)
+```
+
+# Citations
